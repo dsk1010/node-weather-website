@@ -27,9 +27,9 @@ header {
 }
 
 h1 {
-    font-size: 54px;
+    font-size: 64px;
     margin-bottom: 16px;
-    color: #6e6868;
+    color: yellow;
 }
 
 header a {
