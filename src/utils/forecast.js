@@ -16,7 +16,8 @@ const forecast = (latitude, longitude, callback) => {
             // callback is not working here.
             // console.log('Unable to Find Desired Locaion', '= data:',undefined);
         } else {
-            callback(undefined, body.current.weather[0].description + ' outside. It is currently ' + body.current.temp + ' degree out. There is a ' + body.current.clouds + '% chance of Winter Clouds' );
+            console.log(body.daily[0]);
+            callback(undefined, body.current.weather[0].description + ' outside. It is currently ' + body.current.temp + ' degree out. The high today is ' + body.daily[0].temp.max + ' with a low of ' + body.daily[0].temp.min + '. There is a ' + body.current.clouds + '% chance of Winter Clouds' );
         }
     });
 }
